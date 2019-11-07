@@ -1,0 +1,44 @@
+<mvc:View controllerName="formatter.formatter.controller.formatter" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+					<Table id="tbInvoice" items="{/bills}" class="withGrid" noDataText="{i18n>noDataText}">
+					
+						<columns>
+							<Column hAlign="Center" minScreenWidth="Tablet" demandPopin="true" width="15%">
+								<Text text="{i18n>clmTitleSadad}" class="textColor" tooltip="{i18n>tooltipTitleSadad}"></Text>
+								</Column>
+								
+							<Column hAlign="Center" minScreenWidth="Tablet" demandPopin="true" >
+								<Text text="{i18n>clmTitleDueAmnt}" class="textColor" tooltip="{i18n>tooltipTitleDueAmnt}"></Text>
+								</Column>
+								
+							<Column hAlign="Center" minScreenWidth="Tablet" demandPopin="true" >
+								<Text text="{i18n>clmTitlePrd}" class="textColor" tooltip="{i18n>tooltipTitleTitlePrd}"></Text>
+								</Column>
+								
+							<Column hAlign="Center" minScreenWidth="Tablet" demandPopin="true" >
+								<Text text="{i18n>clmTitleTaxType}" class="textColor" tooltip="{i18n>tooltipTitleTaxType}"></Text>
+								</Column>
+						</columns>
+						<items>
+							<ColumnListItem vAlign="Middle">
+								<cells>
+									<Text text = "{Bill number}" wrapping = "true"></Text>
+									<Text text = "{Amount}" wrapping = "true"></Text>
+									<Text text = "{path:'date', formatter:'.test.fnOnFormatDate'}" wrapping = "true"></Text>
+									<Text text = "{path:'status', formatter:'.test.fnReturnStatus'}" wrapping = "true"></Text>
+									
+									
+								</cells>	
+						</ColumnListItem>
+						</items>
+						</Table>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

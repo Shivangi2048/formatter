@@ -1,0 +1,38 @@
+{
+	"bills": [ 
+		
+		{
+			"Bill number":"111",
+			"Amount":"1234",
+			"date":"10092019",
+			"status":"P"
+			
+			
+		},
+		{
+			"Bill number":"101",
+			"Amount":"0123",
+			"date":"11092019",
+			"status":"P"
+		},
+			{
+			"Bill number":"987",
+			"Amount":"5678",
+			"date":"12092019",
+			"status":"NP"
+		},
+			{
+			"Bill number":"876",
+			"Amount":"9999",
+			"date":"13092019",
+			"status":"P"
+		},
+			{
+			"Bill number":"222",
+			"Amount":"1111",
+			"date":"14092019",
+			"status":"NP"
+		}
+		
+	]
+}
